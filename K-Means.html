@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>&lt;no title&gt; &#8212; My sample book</title>
+    <title>Latihan 2 : K-Means &#8212; My sample book</title>
   
   
   
@@ -64,6 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'K-Means';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Latihan 1 : Introduction" href="Introduction.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -154,8 +155,9 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="Introduction.html">TUGAS 1 : Introduction</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Latihan 1 : Introduction</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Latihan 2 : K-Means</a></li>
 </ul>
 
     </div>
@@ -357,9 +359,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -370,19 +370,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><no title></h1>
+    <h1>Latihan 2 : K-Means</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -392,7 +384,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="cell docutils container">
+  <section class="tex2jax_ignore mathjax_ignore" id="latihan-2-k-means">
+<h1>Latihan 2 : K-Means<a class="headerlink" href="#latihan-2-k-means" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -414,7 +408,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-0e91c61e-8db3-4d0e-ac48-1c45253c51de" class="colab-df-container">
+  <div id="df-b68ac529-323e-4ea5-93fe-999eb09c0d96" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -584,7 +578,7 @@ document.write(`
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-0e91c61e-8db3-4d0e-ac48-1c45253c51de')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-b68ac529-323e-4ea5-93fe-999eb09c0d96')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -636,12 +630,12 @@ document.write(`
 
     <script>
       const buttonEl =
-        document.querySelector('#df-0e91c61e-8db3-4d0e-ac48-1c45253c51de button.colab-df-convert');
+        document.querySelector('#df-b68ac529-323e-4ea5-93fe-999eb09c0d96 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-0e91c61e-8db3-4d0e-ac48-1c45253c51de');
+        const element = document.querySelector('#df-b68ac529-323e-4ea5-93fe-999eb09c0d96');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -691,7 +685,7 @@ memory usage: 54.1 KB
 </pre></div>
 </div>
 <div class="output text_html">
-  <div id="df-c3fc045c-e0b9-44a0-a6ec-e211cf8568b1" class="colab-df-container">
+  <div id="df-e88f27da-30a8-4092-8f79-577b6d2238b3" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -861,7 +855,7 @@ memory usage: 54.1 KB
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-c3fc045c-e0b9-44a0-a6ec-e211cf8568b1')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-e88f27da-30a8-4092-8f79-577b6d2238b3')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -913,12 +907,12 @@ memory usage: 54.1 KB
 
     <script>
       const buttonEl =
-        document.querySelector('#df-c3fc045c-e0b9-44a0-a6ec-e211cf8568b1 button.colab-df-convert');
+        document.querySelector('#df-e88f27da-30a8-4092-8f79-577b6d2238b3 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-c3fc045c-e0b9-44a0-a6ec-e211cf8568b1');
+        const element = document.querySelector('#df-e88f27da-30a8-4092-8f79-577b6d2238b3');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -970,7 +964,7 @@ dtype: object
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-b2b78d0c-f6e3-43bb-ab4d-6ed800f483c8" class="colab-df-container">
+  <div id="df-e9d3a396-7994-480c-b6a7-d911da33eb65" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1103,7 +1097,7 @@ dtype: object
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-b2b78d0c-f6e3-43bb-ab4d-6ed800f483c8')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-e9d3a396-7994-480c-b6a7-d911da33eb65')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1155,12 +1149,12 @@ dtype: object
 
     <script>
       const buttonEl =
-        document.querySelector('#df-b2b78d0c-f6e3-43bb-ab4d-6ed800f483c8 button.colab-df-convert');
+        document.querySelector('#df-e9d3a396-7994-480c-b6a7-d911da33eb65 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-b2b78d0c-f6e3-43bb-ab4d-6ed800f483c8');
+        const element = document.querySelector('#df-e9d3a396-7994-480c-b6a7-d911da33eb65');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1343,7 +1337,7 @@ dtype: int64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-48b90a40-2d7f-49a2-bc5c-1e5a08f2245f" class="colab-df-container">
+  <div id="df-27754581-6459-4959-b1ba-92db8a91f7d0" class="colab-df-container">
     <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1513,7 +1507,7 @@ dtype: int64
     <div class="colab-df-buttons">
       
   <div class="colab-df-container">
-    <button class="colab-df-convert" onclick="convertToInteractive('df-48b90a40-2d7f-49a2-bc5c-1e5a08f2245f')"
+    <button class="colab-df-convert" onclick="convertToInteractive('df-27754581-6459-4959-b1ba-92db8a91f7d0')"
             title="Convert this dataframe to an interactive table."
             style="display:none;">
       
@@ -1565,12 +1559,12 @@ dtype: int64
 
     <script>
       const buttonEl =
-        document.querySelector('#df-48b90a40-2d7f-49a2-bc5c-1e5a08f2245f button.colab-df-convert');
+        document.querySelector('#df-27754581-6459-4959-b1ba-92db8a91f7d0 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-48b90a40-2d7f-49a2-bc5c-1e5a08f2245f');
+        const element = document.querySelector('#df-27754581-6459-4959-b1ba-92db8a91f7d0');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -1761,7 +1755,7 @@ weighted avg       0.36      0.31      0.31       154
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x797a637e1ff0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7aeaa80b5fc0&gt;
 </pre></div>
 </div>
 <img alt="_images/65eb39e4746da3a2c3dd7da107982119dd9ea27bbd97b110f4e7f264a55c14d5.png" src="_images/65eb39e4746da3a2c3dd7da107982119dd9ea27bbd97b110f4e7f264a55c14d5.png" />
@@ -1785,17 +1779,18 @@ weighted avg       0.36      0.31      0.31       154
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">data1</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="p">[</span><span class="mi">1</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span><span class="n">diabet</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="p">[</span><span class="mi">5</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">KMeans_Clustering</span><span class="o">.</span><span class="n">labels_</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;rainbow&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">diabet</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="p">[</span><span class="mi">1</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span><span class="n">diabet</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="p">[</span><span class="mi">5</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="n">KMeans_Clustering</span><span class="o">.</span><span class="n">labels_</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;rainbow&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x797a63868910&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.collections.PathCollection at 0x7aeaa07c48e0&gt;
 </pre></div>
 </div>
-<img alt="_images/9f8d2e3f88b2a29ead883d1a956e86e7011b4d5a81b7b03b2f956ef4a48b86e3.png" src="_images/9f8d2e3f88b2a29ead883d1a956e86e7011b4d5a81b7b03b2f956ef4a48b86e3.png" />
+<img alt="_images/a2439622b5d462c6488550d744dfa527723fc2738bccffa889142a2a949325d4.png" src="_images/a2439622b5d462c6488550d744dfa527723fc2738bccffa889142a2a949325d4.png" />
 </div>
 </div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1828,6 +1823,15 @@ weighted avg       0.36      0.31      0.31       154
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Introduction.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Latihan 1 : Introduction</p>
+      </div>
+    </a>
 </div></div>
   
 </div>
@@ -1837,20 +1841,6 @@ weighted avg       0.36      0.31      0.31       154
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-  </nav></div>
-
-</div></div>
               
             
           </div>
